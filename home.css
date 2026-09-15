@@ -1,0 +1,187 @@
+/*настройка всей страницы */
+body {
+  margin: 0; /* сброс стандартных внешних отступов браузера */
+  padding: 0; /* сброс внутренних отступов */
+  font-family: 'Nunito', futura-pt, sans-serif; 
+  color: #2d2a26;       /* цвет текста */
+  background-color: #ffffff; /* цвет фона */
+}
+/* верхняя строка */
+.top-utility {
+    display: flex;
+    justify-content: space-between; /* распределение элементов по левому и правому краям */
+    padding: 8px 30px; /* внутренние отступы: 8px сверху/снизу, 30px по бокам */
+    font-size: 13px; /* размер шрифта */
+    background-color: #e8f4fd; /* цвет фона */
+    color: #7a7a7a; /* цвет текста */
+}
+/* названия кнопок в верхней строке */
+.utility-left span,
+.utility-right span {
+    margin-right: 15px; /* внешний отступ справа от каждого пункта */
+    cursor: pointer; /* курсор пальца */
+}
+/* главная шапка */
+.main-header {
+  text-align: center; /* выравнивание содержимого по центру */
+  padding: 15px 20px 20px 20px; /* внутренние отступы */
+}
+/* логотип Sanrio */
+.logo img {
+  height: 45px; /* высота логотипа */
+  width: auto; /* автоматическая ширина */
+  display: inline-block; /* отображение как строчный элемент */
+}
+/* блок с меню навигации и поиска*/
+.nav-container {
+  display: flex;                               
+  justify-content: center; /* центрирование строки навигации */
+  align-items: center; /* выравнивание элементов по вертикали */
+  gap: 25px; /* расстояние между меню и поиском */
+  margin-top: 15px; /* отступ сверху от логотипа */
+}
+/* cтрока навигации и поиска*/
+.nav-menu {
+  display: flex;
+  justify-content: center; /* центрирование */
+  align-items: center; /* выравнивание по высоте */
+  gap: 24px; /* расстояние между ссылками */
+  /* flex-wrap: wrap;  */
+}
+/* ссылки в меню навигации */
+.nav-menu a {
+  text-decoration: none; /* убираем синее подчеркивание ссылок */
+  color: #2d2a26;
+  font-weight: 800; /* полужирное начертание текста */
+  font-size: 13px; 
+  letter-spacing: 0.5px; /* расстояние между буквами */
+  border-bottom: 2px solid transparent; /* подчеркивание при наведении */
+  padding-bottom: 2px; /* отступ снизу */
+  transition: color 0.2s ease; /* плавный переход цвета (ease функция плавности) */
+}
+
+/* при наведении на ссылку*/
+.nav-menu a:hover {
+  color: #ff3366; /* при наведении ссылка становится розовой */
+  border-bottom-color: #2d2a26; /* линия подчеркивания */
+}
+/* выделение кнопки калькулятора */
+.nav-menu a.nav-calc-link {
+  color: #ff3366;
+  border: 1px dashed #ff3366; /* пунктирная рамка */
+  padding: 4px 10px; /* внутренние отступы */
+  border-radius: 12px; /* скругление углов */
+}
+/* при наведении на кнопку калькулятора */
+.nav-menu a.nav-calc-link:hover {
+  background-color: #ff3366; /* фон становится розовым */
+  color: #ffffff; /* цвет текста становится белым */
+}
+/* полоса с акцией */
+.announcement-bar {
+  background-color: #2098d1; 
+  color: #ffffff;
+  text-align: center; /* выравнивание по центру */
+  padding: 8px 10px; /* внутренние отступы */
+  font-size: 13px; /* размер шрифта */
+  font-weight: 600; /* полужирное начертание */
+  letter-spacing: 0.5px; /* расстояние между буквами */
+}
+/* делим блок на две половины */
+.hero-section {
+  display: flex;         
+  align-items: center; /* выравнивание по высоте */
+  min-height: 580px; /* минимальная высота */
+}
+/* левая половина картинка */
+.hero-image {
+  flex: 1;
+  height: 580px; /* высота */
+  /* background-color: #ffc581 */
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* заполнение блока картинкой без искажения пропорций */
+  display: block; /* отображение как блочный элемент */
+}
+/* правая половина текстовый блок */
+.hero-content {
+  flex: 1; /* занимают оставшееся пространство */
+  background-color: #ffc581; 
+  height: 580px; /* высота */
+  box-sizing: border-box; /* учет отступов и рамок */
+  padding: 40px 60px; /* внутренние отступы */
+  display: flex; 
+  flex-direction: column; /* расположение элементов друг под другом */
+  justify-content: center; /* центрирование по высоте */
+  align-items: center;    /* выравнивание по горизонтали */
+  text-align: center; /* выравнивание текста по центру */
+}
+.hero-subtitle {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #5c4028;
+  margin-bottom: 12px; /* отступ снизу */
+}
+.hero-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #f26522;         
+  margin: 0 0 16px 0;
+  line-height: 1.2; /* плотность строк */
+}
+.hero-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #3b2c20;
+  max-width: 420px; /* максимальная ширина блока */
+  margin: 0 0 28px 0; 
+}
+/* кнопка перехода на калькулятор */
+.hero-btn {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 12px 28px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none; /* убираем подчеркивание */
+  transition: all 0.2s ease; /* плавный переход */
+}
+.hero-btn:hover {
+  background-color: #000000; /* фон меняет цвет */
+  color: #ffffff; /* текст меняет цвет */
+}
+.nav-container {
+  display: flex;
+  justify-content: center; /* выравнивание по горизонтали */
+  align-items: center;
+  gap: 25px;  /* зазор между последним пунктом меню и поиском */
+  margin-top: 15px; /* отступ сверху от логотипа */
+}
+.search-box {
+  display: flex;
+  align-items: center; 
+  border: 1px solid #7a7a7a;
+  border-radius: 4px; 
+  padding: 4px 8px;    
+  background-color: #e8f4fd;
+}
+.search-box input {
+  border: none;
+  background: transparent; /* прозрачный фон */
+  outline: none; /* убераем рамку вокруг поля */
+  font-family: inherit; /* наследуем наш красивый шрифт */
+  font-size: 12px; /* размер шрифта */
+  color: #2d2a26;
+  width: 140px;          
+}
+.search-icon {
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0.5; /* полупрозрачность */
+}

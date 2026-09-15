@@ -1,0 +1,108 @@
+body {
+  margin: 0; 
+  padding: 0;
+  font-family: 'Nunito', futura-pt, sans-serif;
+  color: #2d2a26;
+  background-color: #ffffff;
+}
+
+.calculator-container{
+  display: flex;
+  flex-direction: column; /* расположение заголовка и калькулятора в столбик */
+  justify-content: center; /* выравнивание по горизонтали */
+  align-items: center; /* выравнивание по вертикали */
+  background-color: #fff0f5;
+  /* background-image: url('sanrio-meow.jpg');
+  background-size: 85%; 
+  background-repeat: no-repeat; */
+  /* background-size: cover;  */
+  /* background-position: center;
+  /* background-color: #fff0f5;  */
+  padding: 40px 20px 60px 20px; /* внутренние отступы вокруг калькулятора */
+  min-height: 70vh; /* минимальная высота 70% от экрана */
+}
+/* заголовок */
+.calculator-title {
+  font-size: 2rem;
+  font-weight: 900; 
+  color: #e84f6c; 
+  margin: 0 0 8px 0;
+  letter-spacing: 0.5px;
+}
+
+/* описание */
+.calculator-p {
+  font-size: 15px;
+  color: #5c4028;
+  margin: 10px;
+  font-weight: 600;
+}
+
+/* сам калькулятор */
+.calculator {
+    background-color:#ffffff; /* белый фон карточки */
+    padding: 30px; /* внутренний отступ*/ 
+    border-radius: 32px; /* скругленные углы */
+    box-shadow: 0 15px 40px rgba(255, 105, 135, 0.25); /*розовая тень */
+}
+/* box-shadow: 0 15px 40px rgba(255, 105, 135, 0.25) 1-смещение по горизонтали, 2-по вертикали, 3-радиус размытия, 4-цвет тени и прозрачность */
+/* rgba(255, 105, 135, 0.25) 0.25 это прозрачность */
+/* экран вывода результата и цифр */
+.result {
+  width: 308px;              
+  height: 70px;               
+  margin: 0 5px 18px 5px;     
+  padding-right: 20px;
+  box-sizing: border-box;
+  background-color: #e8f4fd; 
+  color: #2098d1;
+  font-size: 2.6rem; 
+  text-align: right; /* числа прижимаются к правому краю */
+  line-height: 70px; /* выравнивание цифр по вертикали */
+  border-radius: 18px;
+}
+
+/* кнопки */
+.my-btn {
+    width: 65px; /* ширина */
+    height: 65px; /* высота */
+    border-radius: 50%; /* скругленные углы */
+    border: none; /* нет рамки */        
+    margin: 5px; /* отступы */
+    font-size: 1.5rem; /* размер текста */   
+    font-weight: 700;
+    cursor: pointer; /* палец */
+    background-color: #ffe4e1; /* фон */
+    color: #e84f6c; /* цвет текста */
+}
+
+.my-btn:hover {
+    background-color: #e84f6c; /* меняем цвет фона при наведении */
+    color: #fff0f5; /* меняем цвет текста при наведении */
+}
+.my-btn:active {
+    transform: scale(0.95); /* эффект нажатия легкое вдавливание */
+}
+/* второстепенные функциональные кнопки (c, операции) */
+.my-btn.secondary {
+  background-color: #ffd1dc;
+  color: #2d2a26;
+  border-color: #f7b8c7;
+}
+.my-btn.secondary:hover {
+  background-color: #fcaec2; 
+}
+/* основные кнопки (цифры) */
+.my-btn.primary {
+  background-color: #ff3366; 
+  color: #ffffff;            
+  border: none;
+}
+.my-btn.primary:hover {
+  background-color: #e02853; 
+}
+/* самая большая кнопка = */
+.my-btn.execute {
+  width: 145px; /* растянута вправо ширина*/  
+  border-radius: 35px; /* вытянутые углы */
+}
