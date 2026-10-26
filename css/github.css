@@ -1,0 +1,61 @@
+body {
+  margin: 0; 
+  padding: 0;
+  font-family: 'Nunito', futura-pt, sans-serif;
+  color: #2d2a26;
+  background-color: #ffffff;
+}
+
+.github-container{
+  display: flex;
+  flex-direction: column; /* расположение в столбик */
+  justify-content: center; /* выравнивание по горизонтали */
+  align-items: center; /* выравнивание по вертикали */
+  background-color: #fff0f5;
+  min-height: 80vh; /* минимальная высота 70% от экрана */
+}
+
+.github-card {
+  background-color: #ffffff; /* белый фон */
+  padding: 30px; /* внутренние отступы */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; /* картинка и кнопка друг под другом */
+  align-items: center; /* по центру карточки */
+  gap: 20px; /* расстояние между картинкой и кнопкой */
+}
+
+.github-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #e84f6c; 
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.kitty-pic {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover; /* сохраняет пропорции картинки без сплющивания */
+  display: block;
+}
+
+.github-btn {
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  background-color: #ff3366; /* фирменный розовый hello kitty */
+  color: #ffffff; /* белый цвет текста */
+  text-decoration: none; /* убираем стандартное подчеркивание ссылки */
+  padding: 15px 30px; /* комфортные отступы кнопки */
+  border-radius: 15px; /* округлая форма кнопки */
+  font-size: 18px;
+  font-weight: 800;
+}
+.github-btn:hover {
+  background-color: #e02853; 
+}
+.github-btn:active {
+  transform: scale(0.95); /* тактильное вдавливание кнопки */
+}
+

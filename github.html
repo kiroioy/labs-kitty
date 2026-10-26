@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Hello Kitty & Friends</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/github.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎀</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- верхняя вспомогательная строка -->
+  <div class="top-utility">
+    <div class="utility-left">
+      <span>Подарки с персонажами</span>
+      <span>Кафе Hello Kitty</span>
+    </div>
+    <div class="utility-right">
+      <span>Список желаний ♡</span>
+      <span>Мой аккаунт</span>
+      <span>Корзина</span>
+    </div>
+  </div>
+
+  <!-- главная шапка с логотипом -->
+  <header class="main-header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo-sanrio.avif" alt="Sanrio Logo">
+      </a>
+    </div>
+
+    <!-- блок с пунктами меню навигации -->
+    <div class="nav-container">
+      <nav class="nav-menu">
+        <a href="#">НОВИНКИ</a>
+        <a href="#">КОЛЛАБОРАЦИИ</a>
+        <a href="lab3/index.html">ПЕРСОНАЖИ</a>
+        <a href="#">ОДЕЖДА</a>
+        <!-- кнопка перехода в калькулятор -->
+        <a href="calculator.html" class="nav-calc-link">★ КАЛЬКУЛЯТОР ★</a>
+        <!-- активная кнопка текущей страницы Гитхаб -->
+        <a href="github.html" class="nav-github-link active">ГИТХАБ</a>
+      </nav>
+
+      <!-- поле поиска -->
+      <!-- <div class="search-box">
+        <input type="text" placeholder="Что вы ищете?">
+      </div> -->
+    </div>
+  </header>
+
+  <!-- баннер с информацией -->
+  <div class="announcement-bar">
+    <span>🎀 Добро пожаловать на сайт Hello Kitty!!! 🎀</span>
+  </div>
+
+   <main class="github-container">
+     <h2 class="github-title">РЕПОЗИТОРИЙ ПРОЕКТА ПО КУРСУ</h2>
+     <!-- картинка -->
+     <div class="github-card">
+     <div class="github-image-box">
+        <!-- можно использовать sanrio-meow.jpg, hello-kitty-calc.jpg или свою картинку -->
+        <img src="images/sanrio-meow.jpg" alt="Hello Kitty and Friends" class="kitty-pic">
+      </div>
+      <!-- target="_blank" — обязательный атрибут для внешних ссылок, чтобы открывалась в новой вкладке
+      rel="noopener noreferrer" — стандарт безопасности веб-разработки при открытии внешних ссылок через target="_blank".-->
+       <a href="https://github.com/kiroioy/labs-kitty" target="_blank" rel="noopener noreferrer" class="github-btn">
+          <span>Перейти на GitHub</span>
+        </a>
+    </div>
+    </main>
+</body>
+</html>

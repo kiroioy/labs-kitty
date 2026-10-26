@@ -3,10 +3,16 @@
 
 <head>
   <title>Sanrio — Hello Kitty & Friends</title>
-  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="css/home.css">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎀</text></svg>">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+        font-family: 'Nunito', sans-serif;
+        background-color: #ffffff;
+    }
+</style>
 </head>
 
 <body>
@@ -26,7 +32,7 @@
   <header class="main-header">
     <div class="logo">
       <a href="index.html">
-        <img src="logo-sanrio.avif" alt="Sanrio Logo">
+        <img src="images/logo-sanrio.avif" alt="Sanrio Logo">
       </a>
     </div>
     <!--блок с пунктами меню навигации-->
@@ -34,26 +40,27 @@
       <nav class="nav-menu">
         <a href="#">НОВИНКИ</a>
         <a href="#">КОЛЛАБОРАЦИИ</a>
-        <a href="#">ПЕРСОНАЖИ</a>
+        <a href="lab3/index.html">ПЕРСОНАЖИ</a>
         <a href="#">ОДЕЖДА</a>
         <!-- кнопка перехода в калькулятор -->
         <a href="calculator.html" class="nav-calc-link">★ КАЛЬКУЛЯТОР ★</a>
-        <a href="#">СКИДКИ</a>
+        <!-- кнопка перехода на страницу гитхаба -->
+        <a href="github.html" class="nav-github-link">ГИТХАБ</a>
       </nav>
       <!-- поле поиска -->
-      <div class="search-box">
+      <!-- <div class="search-box">
         <input type="text" placeholder="Что вы ищете?">
-      </div>
+      </div> -->
     </div>
   </header>
   <!--баннер с информацией-->
   <div class="announcement-bar">
-    <span>🎀 Бесплатная доставка при заказе от 5000₽! 🎀</span>
+    <span>🎀 Добро пожаловать на сайт Hello Kitty!!! 🎀</span>
   </div>
   <main class="hero-section">
     <!-- левая половина с картинкой -->
     <div class="hero-image">
-      <img src="sanriohome.png" alt="Hello Kitty">
+      <img src="images/sanriohome.png" alt="Hello Kitty">
     </div>
 
     <!-- правая половина с описанием и кнопкой -->
@@ -69,4 +76,5 @@
     </div>
   </main>
 </body>
+
 </html>

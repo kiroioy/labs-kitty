@@ -12,7 +12,7 @@ body {
   justify-content: center; /* выравнивание по горизонтали */
   align-items: center; /* выравнивание по вертикали */
   background-color: #fff0f5;
-  /* background-image: url('sanrio-meow.jpg');
+  /* background-image: url('../images/sanrio-meow.jpg');
   background-size: 85%; 
   background-repeat: no-repeat; */
   /* background-size: cover;  */
@@ -32,8 +32,8 @@ body {
 
 /* описание */
 .calculator-p {
-  font-size: 15px;
-  color: #5c4028;
+  font-size: 16px;
+  color: #2098d1;
   margin: 10px;
   font-weight: 600;
 }
@@ -99,10 +99,39 @@ body {
   border: none;
 }
 .my-btn.primary:hover {
-  background-color: #e02853; 
+  background-color: #e84f6c; 
 }
 /* самая большая кнопка = */
 .my-btn.execute {
   width: 145px; /* растянута вправо ширина*/  
   border-radius: 35px; /* вытянутые углы */
 }
+
+/* панель переключения тем */
+/*
+.theme-panel {
+  display: flex; 
+  gap: 12px; 
+  margin-bottom: 20px;
+}
+.theme-btn {
+  background-color: #ffffff; 
+  color: #e84f6c; 
+  border: 2px solid #ffd1dc;
+  border-radius: 20px; 
+  padding: 8px 16px;
+  font-size: 14px; 
+  font-weight: 700; 
+  font-family: inherit; 
+  cursor: pointer;
+  transition: all 0.2s ease; 
+  box-shadow: 0 4px 10px rgba(255, 105, 135, 0.15);
+}
+.theme-btn:hover {
+  background-color: #e84f6c; 
+  color: #ffffff; 
+}
+.theme-btn:active {
+  transform: scale(0.96); 
+}
+*/
